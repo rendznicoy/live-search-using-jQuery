@@ -103,6 +103,12 @@
         </div>
         
         <div class="results-count" id="resultsCount" style="display: none;"></div>
+        <div class="pagination-container" id="paginationContainer" style="display: none;">
+            <nav aria-label="Employee pagination">
+                <ul class="pagination justify-content-center" id="pagination">
+                </ul>
+            </nav>
+        </div>
         
         <div id="results"></div>
     </div>
