@@ -1,7 +1,7 @@
 [
   {
     "name": "Crist Briand",
-    "image": "./assets/images/crist-briand.jpg",
+    "image": "assets/images/crist-briand.jpg",
     "location": "Philippines",
     "age": 19,
     "gender": "Male",
@@ -21,7 +21,7 @@
   },
   {
     "name": "Moymoy Palaboy",
-    "image": "./assets/images/moymoy-palaboy.jpg",
+    "image": "assets/images/moymoy-palaboy.jpeg",
     "location": "Pasig City, Philippines",
     "age": 30,
     "gender": "Male",
@@ -120,7 +120,7 @@
   },
   {
     "name": "Charice Pempengco / Jake Zyrus",
-    "image": "./assets/images/jake-zyrus.jpg",
+    "image": "assets/images/jake-cyrus.jpg",
     "location": "Laguna, Philippines",
     "age": 31,
     "gender": "Male",
@@ -249,7 +249,7 @@
   },
   {
     "name": "Niana Guerrero",
-    "image": "./assets/images/niana-guerrero.jpg",
+    "image": "./assets/images/nianna-guerrero.jpg",
     "location": "Philippines",
     "age": 18,
     "gender": "Female",
@@ -268,7 +268,7 @@
   },
   {
     "name": "Gloco Gaming",
-    "image": "./assets/images/gloco.jpg",
+    "image": "./assets/images/gloco.jpeg",
     "location": "Philippines",
     "age": 28,
     "gender": "Male",
@@ -342,7 +342,7 @@
   },
   {
     "name": "DJ Loonyo",
-    "image": "./assets/images/dj-loonyo.jpg",
+    "image": "./assets/images/dj-loonyo.jpeg",
     "location": "Cagayan de Oro, Philippines",
     "age": 30,
     "gender": "Male",
@@ -414,7 +414,7 @@
   },
   {
     "name": "Madam Inutz",
-    "image": "./assets/images/madam-inutz.jpg",
+    "image": "./assets/images/madam-inutz.jpeg",
     "location": "Cavite, Philippines",
     "age": 40,
     "gender": "Female",
@@ -491,7 +491,7 @@
   },
   {
     "name": "Kiray Celis",
-    "image": "./assets/images/kiray-celis.jpg",
+    "image": "./assets/images/kiray-celis.jpeg",
     "location": "Quezon City, Philippines",
     "age": 28,
     "gender": "Female",
