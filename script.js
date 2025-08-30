@@ -8,6 +8,7 @@ $(document).ready(function () {
   $.getJSON("data.json", function (data) {
     allEmployees = data;
     performSearch();
+    createPagination();
   }).fail(function () {
     $("#results").html(`
                     <div class="no-results">
@@ -19,10 +20,16 @@ $(document).ready(function () {
   });
 
   // Event listeners
-  $("#globalSearch").on("input", performSearch);
+  $("#globalSearch").on("input", function () {
+    currentPage = 1;
+    performSearch();
+  });
   $("#searchField, #statusFilter, #genderFilter, #ageMin, #ageMax, #sortBy").on(
     "change",
-    performSearch
+    function () {
+      currentPage = 1;
+      performSearch();
+    }
   );
 });
 
@@ -38,6 +45,7 @@ function toggleFilters() {
 }
 
 function clearAllFilters() {
+  currentPage = 1;
   $("#globalSearch").val("");
   $("#searchField").val("all");
   $("#statusFilter").val("");
@@ -50,6 +58,8 @@ function clearAllFilters() {
 }
 
 function performSearch() {
+  displayResults();
+  createPagination();
   const searchTerm = $("#globalSearch").val().toLowerCase();
   const searchField = $("#searchField").val();
   const statusFilter = $("#statusFilter").val();
@@ -146,30 +156,39 @@ function performSearch() {
 function displayResults() {
   const resultsContainer = $("#results");
   const resultsCount = $("#resultsCount");
+  const paginationContainer = $("#paginationContainer");
 
   if (filteredEmployees.length === 0) {
     resultsContainer.html(`
-                    <div class="no-results">
-                        <i class="fas fa-search"></i>
-                        <h4>No employees found</h4>
-                        <p>Try adjusting your search criteria or filters</p>
-                    </div>
-                `);
+            <div class="no-results">
+                <i class="fas fa-search"></i>
+                <h4>No employees found</h4>
+                <p>Try adjusting your search criteria or filters</p>
+            </div>
+        `);
     resultsCount.hide();
+    paginationContainer.hide();
     return;
   }
 
-  // Show results count
-  resultsCount
-    .show()
-    .text(
-      `Found ${filteredEmployees.length} employee${
-        filteredEmployees.length !== 1 ? "s" : ""
-      }`
-    );
+  // Calculate pagination
+  const totalPages = Math.ceil(filteredEmployees.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentEmployees = filteredEmployees.slice(startIndex, endIndex);
+
+  // Show results count with pagination info
+  const startItem = startIndex + 1;
+  const endItem = Math.min(endIndex, filteredEmployees.length);
+  resultsCount.show().html(`
+        Found ${filteredEmployees.length} employee${
+    filteredEmployees.length !== 1 ? "s" : ""
+  } 
+        <span class="text-muted">| Showing ${startItem}-${endItem}</span>
+    `);
 
   let html = "";
-  filteredEmployees.forEach((employee) => {
+  currentEmployees.forEach((employee) => {
     html += createEmployeeCard(employee);
   });
 
@@ -192,10 +211,7 @@ function createEmployeeCard(employee) {
                     <div class="employee-header">
                         <img src="${employee.image}" alt="${
     employee.name
-  }" class="employee-image" onerror="this.src='https://via.placeholder.com/60x60?text=${employee.name
-    .split(" ")
-    .map((n) => n[0])
-    .join("")}'">
+  }" class="employee-image">
                         <div class="employee-info">
                             <h5>${employee.name}</h5>
                             <p><i class="fas fa-briefcase"></i> ${
@@ -246,4 +262,82 @@ function createEmployeeCard(employee) {
                     </div>
                 </div>
             `;
+}
+
+function goToPage(page) {
+  currentPage = page;
+  displayResults();
+  createPagination();
+}
+
+function createPagination() {
+  const totalPages = Math.ceil(filteredEmployees.length / itemsPerPage);
+  const paginationContainer = $("#paginationContainer");
+  const pagination = $("#pagination");
+
+  if (filteredEmployees.length === 0 || totalPages <= 1) {
+    paginationContainer.hide();
+    return;
+  }
+
+  paginationContainer.show();
+  pagination.empty();
+
+  // Previous button
+  pagination.append(`
+        <li class="page-item ${currentPage === 1 ? "disabled" : ""}">
+            <a class="page-link" href="#" onclick="${
+              currentPage > 1 ? `goToPage(${currentPage - 1})` : "return false"
+            }" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </li>
+    `);
+
+  // Page numbers
+  let startPage = Math.max(1, currentPage - 2);
+  let endPage = Math.min(totalPages, currentPage + 2);
+
+  if (startPage > 1) {
+    pagination.append(
+      `<li class="page-item"><a class="page-link" href="#" onclick="goToPage(1)">1</a></li>`
+    );
+    if (startPage > 2) {
+      pagination.append(
+        `<li class="page-item disabled"><span class="page-link">...</span></li>`
+      );
+    }
+  }
+
+  for (let i = startPage; i <= endPage; i++) {
+    pagination.append(`
+            <li class="page-item ${i === currentPage ? "active" : ""}">
+                <a class="page-link" href="#" onclick="goToPage(${i})">${i}</a>
+            </li>
+        `);
+  }
+
+  if (endPage < totalPages) {
+    if (endPage < totalPages - 1) {
+      pagination.append(
+        `<li class="page-item disabled"><span class="page-link">...</span></li>`
+      );
+    }
+    pagination.append(
+      `<li class="page-item"><a class="page-link" href="#" onclick="goToPage(${totalPages})">${totalPages}</a></li>`
+    );
+  }
+
+  // Next button
+  pagination.append(`
+        <li class="page-item ${currentPage === totalPages ? "disabled" : ""}">
+            <a class="page-link" href="#" onclick="${
+              currentPage < totalPages
+                ? `goToPage(${currentPage + 1})`
+                : "return false"
+            }" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+    `);
 }
