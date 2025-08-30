@@ -13,7 +13,7 @@ $(document).ready(function () {
     $("#results").html(`
                     <div class="no-results">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Unable to load employee data</h4>
+                        <h4>Unable to load person data</h4>
                         <p>Please make sure the data.json file exists and is accessible</p>
                     </div>
                 `);
@@ -162,7 +162,7 @@ function displayResults() {
     resultsContainer.html(`
             <div class="no-results">
                 <i class="fas fa-search"></i>
-                <h4>No employees found</h4>
+                <h4>No persons found</h4>
                 <p>Try adjusting your search criteria or filters</p>
             </div>
         `);
@@ -181,7 +181,7 @@ function displayResults() {
   const startItem = startIndex + 1;
   const endItem = Math.min(endIndex, filteredEmployees.length);
   resultsCount.show().html(`
-        Found ${filteredEmployees.length} employee${
+        Found ${filteredEmployees.length} person${
     filteredEmployees.length !== 1 ? "s" : ""
   } 
         <span class="text-muted">| Showing ${startItem}-${endItem}</span>
