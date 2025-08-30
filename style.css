@@ -1,0 +1,26 @@
+#result {
+  position: absolute;
+  width: 100%;
+  max-width: 870px;
+  cursor: pointer;
+  overflow-y: auto;
+  max-height: 400px;
+  box-sizing: border-box;
+  z-index: 1001;
+}
+
+.link-class:hover {
+  background-color: #f1f1f1;
+}
+
+.container {
+  width: 900px;
+}
+
+h2 {
+  align-items: center;
+}
+
+h3 {
+  align-items: center;
+}
