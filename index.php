@@ -11,23 +11,101 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <link rel="stylesheet" href="style.css">
     <body>
-        <br /><br />
         <div class="container">
-            <h2>JSON Live Data Search using Ajax jQuery</h2>
-            <h3>Employee Data</h3>
-            <br /><br />
-            <div align="center">
-                <input type="text" name="search" id="search" placeholder="Search Employee..." class="form-control" />
-            </div>
-            <ul class="list-group" id="result">
-            </ul>
-            <br />
+        <div class="header">
+            <h1><i class="fas fa-users"></i>Employee Search</h1>
         </div>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({ offset: 0 });
-        </script>
+        
+        <div class="search-container">
+            <div class="search-input">
+                <i class="fas fa-search"></i>
+                <input type="text" id="globalSearch" class="form-control" placeholder="Search employees by name, job title, skills, location, or company...">
+            </div>
+            
+            <div class="text-center">
+                <button class="btn btn-toggle-filters" onclick="toggleFilters()">
+                    <i class="fas fa-filter"></i> Advanced Filters
+                </button>
+                <button class="btn clear-filters" onclick="clearAllFilters()" style="display: none;" id="clearBtn">
+                    <i class="fas fa-times"></i> Clear All
+                </button>
+            </div>
+            
+            <div class="filter-section" id="filterSection">
+                <div class="row filter-row">
+                    <div class="col-md-4">
+                        <div class="filter-group">
+                            <div class="filter-title">Search Field</div>
+                            <select class="form-control" id="searchField">
+                                <option value="all">All Fields</option>
+                                <option value="name">Name</option>
+                                <option value="job_title">Job Title</option>
+                                <option value="company">Company</option>
+                                <option value="location">Location</option>
+                                <option value="skills">Skills</option>
+                                <option value="bio">Biography</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="filter-group">
+                            <div class="filter-title">Status</div>
+                            <select class="form-control" id="statusFilter">
+                                <option value="">All Status</option>
+                                <option value="Active">Active</option>
+                                <option value="Inactive">Inactive</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="filter-group">
+                            <div class="filter-title">Gender</div>
+                            <select class="form-control" id="genderFilter">
+                                <option value="">All Genders</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row filter-row">
+                    <div class="col-md-6">
+                        <div class="filter-group">
+                            <div class="filter-title">Age Range</div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="number" class="form-control" id="ageMin" placeholder="Min Age" min="18" max="100">
+                                </div>
+                                <div class="col-6">
+                                    <input type="number" class="form-control" id="ageMax" placeholder="Max Age" min="18" max="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="filter-group">
+                            <div class="filter-title">Sort By</div>
+                            <select class="form-control" id="sortBy">
+                                <option value="name">Name (A-Z)</option>
+                                <option value="name_desc">Name (Z-A)</option>
+                                <option value="age">Age (Young to Old)</option>
+                                <option value="age_desc">Age (Old to Young)</option>
+                                <option value="job_title">Job Title</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="results-count" id="resultsCount" style="display: none;"></div>
+        
+        <div id="results"></div>
+    </div>
         <script src="script.js"></script>
     </body>
 </html>
