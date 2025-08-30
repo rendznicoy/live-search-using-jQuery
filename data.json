@@ -1,0 +1,541 @@
+[
+  {
+    "name": "Crist Briand",
+    "image": "./assets/images/crist-briand.jpg",
+    "location": "Philippines",
+    "age": 19,
+    "gender": "Male",
+    "job_title": "Student",
+    "company": "N/A",
+    "skills": ["Dancing", "Entertainment"],
+    "interests": ["TikTok", "Vlogging"],
+    "bio": "Crist Briand became a viral meme for his unique TikTok dance moves and expressions.",
+    "contact": {
+      "socials": {
+        "facebook": "facebook.com/cristbriand",
+        "tiktok": "tiktok.com/@cristbriand"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Moymoy Palaboy",
+    "image": "./assets/images/moymoy-palaboy.jpg",
+    "location": "Pasig City, Philippines",
+    "age": 30,
+    "gender": "Male",
+    "job_title": "Content Creator",
+    "company": "YouTube",
+    "skills": ["Lip Syncing", "Comedy"],
+    "interests": ["Music Parodies", "Vlogging"],
+    "bio": "Comedy duo that went viral for lip-sync parody videos, gaining millions of views worldwide.",
+    "contact": {
+      "socials": {
+        "youtube": "youtube.com/moymoypalaboy",
+        "facebook": "facebook.com/moymoypalaboy"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Ethel Booba",
+    "image": "./assets/images/ethel-booba.jpg",
+    "location": "Manila, Philippines",
+    "age": 46,
+    "gender": "Female",
+    "job_title": "Comedian / Singer",
+    "company": "Showbiz",
+    "skills": ["Comedy", "Singing", "Social Commentary"],
+    "interests": ["Twitter Banters", "Hosting"],
+    "bio": "Known for her witty one-liners and savage tweets, Ethel Booba became a Twitter meme queen.",
+    "contact": {
+      "socials": {
+        "twitter": "twitter.com/IamEthylGabison",
+        "facebook": "facebook.com/ethelbooba"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Ramon Bautista",
+    "image": "./assets/images/ramon-bautista.jpg",
+    "location": "Quezon City, Philippines",
+    "age": 49,
+    "gender": "Male",
+    "job_title": "Comedian / Professor",
+    "company": "UP Diliman",
+    "skills": ["Comedy", "Acting", "Lecturing"],
+    "interests": ["Pop Culture", "Movies"],
+    "bio": "Internet-famous for his 'Tales from the Friendzone' and deadpan humor.",
+    "contact": {
+      "socials": {
+        "youtube": "youtube.com/ramonbautista",
+        "facebook": "facebook.com/ramonbautista"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Mimiyuuuh",
+    "image": "./assets/images/mimiyuuuh.jpg",
+    "location": "Philippines",
+    "age": 27,
+    "gender": "Non-binary",
+    "job_title": "Content Creator / Fashion Influencer",
+    "company": "YouTube",
+    "skills": ["Comedy", "Fashion", "Hosting"],
+    "interests": ["OOTD", "Funny Skits", "Music"],
+    "bio": "Mimiyuuuh became viral with the 'Dalagang Pilipina' challenge and is now a mainstream influencer.",
+    "contact": {
+      "socials": {
+        "youtube": "youtube.com/mimiyuuuh",
+        "instagram": "instagram.com/mimiyuuuh"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Xian Gaza",
+    "image": "./assets/images/xian-gaza.jpg",
+    "location": "Manila, Philippines",
+    "age": 30,
+    "gender": "Male",
+    "job_title": "Entrepreneur / Influencer",
+    "company": "Freelance",
+    "skills": ["Viral Marketing", "Publicity Stunts"],
+    "interests": ["Social Media", "Business"],
+    "bio": "Known for outrageous billboard proposals and viral antics.",
+    "contact": {
+      "socials": {
+        "facebook": "facebook.com/xian.s.gaza"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Charice Pempengco / Jake Zyrus",
+    "image": "./assets/images/jake-zyrus.jpg",
+    "location": "Laguna, Philippines",
+    "age": 31,
+    "gender": "Male",
+    "job_title": "Singer",
+    "company": "Music Industry",
+    "skills": ["Singing", "Performance"],
+    "interests": ["Music", "Pop Culture"],
+    "bio": "Famous singer who became a meme for powerful belting and transformation.",
+    "contact": {
+      "socials": {
+        "instagram": "instagram.com/jakezyrusmusic"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Makagago",
+    "image": "./assets/images/makagago.png",
+    "location": "Philippines",
+    "age": 30,
+    "gender": "Male",
+    "job_title": "YouTuber / Rapper",
+    "company": "YouTube",
+    "skills": ["Rap Battles", "Roasting"],
+    "interests": ["YouTube Drama", "Music"],
+    "bio": "Controversial YouTuber known for online feuds and viral rap battles.",
+    "contact": {
+      "socials": {
+        "youtube": "youtube.com/makagago"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino"]
+  },
+  {
+    "name": "Andrew E",
+    "image": "./assets/images/andrew-e.jpg",
+    "location": "Parañaque, Philippines",
+    "age": 56,
+    "gender": "Male",
+    "job_title": "Rapper / Actor",
+    "company": "Entertainment",
+    "skills": ["Rap", "Comedy"],
+    "interests": ["Music", "Movies"],
+    "bio": "OG Pinoy rapper turned meme king with songs like 'Banyo Queen' and 'Humanap Ka ng Panget'.",
+    "contact": {
+      "socials": {}
+    },
+    "status": "Active",
+    "languages": ["Filipino"]
+  },
+  {
+    "name": "Jam Magno",
+    "image": "./assets/images/jam-magno.jpg",
+    "location": "Butuan, Philippines",
+    "age": 40,
+    "gender": "Female",
+    "job_title": "Influencer",
+    "company": "N/A",
+    "skills": ["Commentary", "Vlogging"],
+    "interests": ["Politics", "Social Media"],
+    "bio": "Infamous for controversial TikTok commentaries that turned into meme material.",
+    "contact": {
+      "socials": {
+        "tiktok": "tiktok.com/@jam_magno"
+      }
+    },
+    "status": "Banned",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Raffy Tulfo",
+    "image": "./assets/images/raffy-tulfo.jpg",
+    "location": "Manila, Philippines",
+    "age": 63,
+    "gender": "Male",
+    "job_title": "Broadcast Journalist / Senator",
+    "company": "Senate / TV5",
+    "skills": ["Mediation", "Public Service"],
+    "interests": ["Justice", "TV Shows"],
+    "bio": "His show 'Raffy Tulfo in Action' spawned countless memes from dramatic complainants.",
+    "contact": {
+      "socials": {
+        "youtube": "youtube.com/raffytulfoinaction"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Lola Nidora",
+    "image": "./assets/images/lola-nidora.jpg",
+    "location": "Philippines",
+    "age": 70,
+    "gender": "Female",
+    "job_title": "Fictional Character",
+    "company": "Eat Bulaga",
+    "skills": ["Comedy", "Wisdom Sharing"],
+    "interests": ["Kalyeserye", "Aldub Nation"],
+    "bio": "Aldub Kalyeserye's Lola Nidora became an iconic meme machine with her strict advice and humor.",
+    "contact": {
+      "socials": {}
+    },
+    "status": "Retired",
+    "languages": ["Filipino"]
+  },
+  {
+    "name": "Ranz Kyle",
+    "image": "./assets/images/ranz-kyle.jpg",
+    "location": "Philippines",
+    "age": 25,
+    "gender": "Male",
+    "job_title": "Dancer / YouTuber",
+    "company": "YouTube",
+    "skills": ["Dancing", "Choreography"],
+    "interests": ["TikTok", "Music"],
+    "bio": "Half of the sibling duo Ranz and Niana, viral for dance challenges and memes.",
+    "contact": {
+      "socials": {
+        "youtube": "youtube.com/ranzkyle"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Niana Guerrero",
+    "image": "./assets/images/niana-guerrero.jpg",
+    "location": "Philippines",
+    "age": 18,
+    "gender": "Female",
+    "job_title": "Dancer / Influencer",
+    "company": "YouTube",
+    "skills": ["Dancing", "Vlogging"],
+    "interests": ["Dance Challenges", "Music"],
+    "bio": "Young dancing sensation famous for TikTok trends and YouTube collabs.",
+    "contact": {
+      "socials": {
+        "youtube": "youtube.com/ranzkyle"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Gloco Gaming",
+    "image": "./assets/images/gloco.jpg",
+    "location": "Philippines",
+    "age": 28,
+    "gender": "Male",
+    "job_title": "Streamer / Content Creator",
+    "company": "YouTube",
+    "skills": ["Gaming", "Comedy"],
+    "interests": ["Anime", "Streaming"],
+    "bio": "Popular Pinoy streamer known for his funny Tagalog dubs and viral reactions.",
+    "contact": {
+      "socials": {
+        "youtube": "youtube.com/gloco"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Ate Gay",
+    "image": "./assets/images/ate-gay.jpg",
+    "location": "Manila, Philippines",
+    "age": 52,
+    "gender": "Male",
+    "job_title": "Comedian / Impersonator",
+    "company": "Comedy Bars",
+    "skills": ["Comedy", "Singing", "Parody"],
+    "interests": ["Impersonations", "Stand-up"],
+    "bio": "Comedian-impersonator who became a meme staple in the gay comedy scene.",
+    "contact": {
+      "socials": {}
+    },
+    "status": "Active",
+    "languages": ["Filipino"]
+  },
+  {
+    "name": "Vice Ganda",
+    "image": "./assets/images/vice-ganda.jpg",
+    "location": "Quezon City, Philippines",
+    "age": 47,
+    "gender": "Non-binary",
+    "job_title": "Comedian / Host / Actor",
+    "company": "ABS-CBN",
+    "skills": ["Comedy", "Hosting", "Acting"],
+    "interests": ["Showtime Hosting", "Stand-up"],
+    "bio": "One of the Philippines’ biggest comedians, with countless meme-worthy lines from 'It’s Showtime'.",
+    "contact": {
+      "socials": {
+        "instagram": "instagram.com/praybeytbenjamin"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino"]
+  },
+  {
+    "name": "Mocha Uson",
+    "image": "./assets/images/mocha-uson.jpg",
+    "location": "Manila, Philippines",
+    "age": 41,
+    "gender": "Female",
+    "job_title": "Influencer / Politician",
+    "company": "Mocha Uson Blog",
+    "skills": ["Vlogging", "Public Speaking"],
+    "interests": ["Politics", "Social Media"],
+    "bio": "Former girl group member turned political influencer, often the center of meme wars.",
+    "contact": {
+      "socials": {
+        "facebook": "facebook.com/MochaUsonBlog"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "DJ Loonyo",
+    "image": "./assets/images/dj-loonyo.jpg",
+    "location": "Cagayan de Oro, Philippines",
+    "age": 30,
+    "gender": "Male",
+    "job_title": "Dancer / Choreographer",
+    "company": "Online Dance Crew",
+    "skills": ["Dancing", "Choreography"],
+    "interests": ["TikTok", "Online Shows"],
+    "bio": "Became viral during the pandemic for dance covers and controversial takes.",
+    "contact": {
+      "socials": {
+        "tiktok": "tiktok.com/@djloonyo"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Fumiya Sankai",
+    "image": "./assets/images/fumiya.jpg",
+    "location": "Japan / Manila",
+    "age": 27,
+    "gender": "Male",
+    "job_title": "Content Creator",
+    "company": "YouTube",
+    "skills": ["Comedy", "Vlogging"],
+    "interests": ["Pinoy Culture", "Entertainment"],
+    "bio": "Japanese YouTuber who became a PBB housemate, loved for his funny Filipino expressions.",
+    "contact": {
+      "socials": {
+        "youtube": "youtube.com/fumiya"
+      }
+    },
+    "status": "Active",
+    "languages": ["Japanese", "Filipino", "English"]
+  },
+  {
+    "name": "Baninay Bautista",
+    "image": "./assets/images/baninay.jpg",
+    "location": "Philippines",
+    "age": 28,
+    "gender": "Female",
+    "job_title": "YouTuber / Actress",
+    "company": "YouTube",
+    "skills": ["Comedy", "Vlogging"],
+    "interests": ["Funny Skits", "Lifestyle"],
+    "bio": "Former PBB housemate turned vlogger, often turned into meme material.",
+    "contact": {
+      "socials": {
+        "youtube": "youtube.com/baninaybautista"
+      }
+    },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Senator Bato dela Rosa",
+    "image": "./assets/images/bato-dela-rosa.jpg",
+    "location": "Philippines",
+    "age": 63,
+    "gender": "Male",
+    "job_title": "Politician",
+    "company": "Senate of the Philippines",
+    "skills": ["Public Service", "Policing"],
+    "interests": ["Politics", "Campaigns"],
+    "bio": "Former PNP Chief whose emotional speeches and quirks became meme staples.",
+    "contact": { "socials": {} },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Madam Inutz",
+    "image": "./assets/images/madam-inutz.jpg",
+    "location": "Cavite, Philippines",
+    "age": 40,
+    "gender": "Female",
+    "job_title": "Online Seller",
+    "company": "Facebook Live",
+    "skills": ["Selling", "Comedy"],
+    "interests": ["Livestreaming", "Entertaining"],
+    "bio": "Viral for her savage and comedic selling spiels on Facebook Live.",
+    "contact": {
+      "socials": { "facebook": "facebook.com/madamInutz" }
+    },
+    "status": "Active",
+    "languages": ["Filipino"]
+  },
+  {
+    "name": "Sandara Park",
+    "image": "./assets/images/sandara-park.jpg",
+    "location": "Seoul / Manila",
+    "age": 39,
+    "gender": "Female",
+    "job_title": "Singer / Actress",
+    "company": "YG Entertainment",
+    "skills": ["Singing", "Dancing", "Hosting"],
+    "interests": ["K-Pop", "Pinoy Culture"],
+    "bio": "Ex-PBB star turned K-pop idol, still memed by Filipinos for her iconic 'Krung-Krung' days.",
+    "contact": { "socials": {} },
+    "status": "Active",
+    "languages": ["Korean", "Filipino", "English"]
+  },
+  {
+    "name": "Chito Miranda",
+    "image": "./assets/images/chito-miranda.jpg",
+    "location": "Philippines",
+    "age": 48,
+    "gender": "Male",
+    "job_title": "Singer / Band Frontman",
+    "company": "Parokya ni Edgar",
+    "skills": ["Singing", "Songwriting"],
+    "interests": ["Comedy Songs", "Pop Culture"],
+    "bio": "Lead singer of Parokya ni Edgar, known for meme-worthy lyrics and antics.",
+    "contact": { "socials": {} },
+    "status": "Active",
+    "languages": ["Filipino", "English"]
+  },
+  {
+    "name": "Jeric Raval",
+    "image": "./assets/images/jeric-raval.png",
+    "location": "Philippines",
+    "age": 54,
+    "gender": "Male",
+    "job_title": "Actor",
+    "company": "Showbiz",
+    "skills": ["Action", "Comedy"],
+    "interests": ["Movies", "Viral Scenes"],
+    "bio": "Became a meme for his ageless looks and 'strict tatay' persona.",
+    "contact": { "socials": {} },
+    "status": "Active",
+    "languages": ["Filipino"]
+  },
+  {
+    "name": "AJ Raval",
+    "image": "./assets/images/aj-raval.jpg",
+    "location": "Philippines",
+    "age": 24,
+    "gender": "Female",
+    "job_title": "Actress / Influencer",
+    "company": "Showbiz",
+    "skills": ["Acting", "Social Media"],
+    "interests": ["Movies", "Vlogging"],
+    "bio": "Actress turned viral personality, often trending in memes and social media buzz.",
+    "contact": { "socials": {} },
+    "status": "Active",
+    "languages": ["Filipino"]
+  },
+  {
+    "name": "Kiray Celis",
+    "image": "./assets/images/kiray-celis.jpg",
+    "location": "Quezon City, Philippines",
+    "age": 28,
+    "gender": "Female",
+    "job_title": "Comedian / Actress",
+    "company": "Showbiz",
+    "skills": ["Comedy", "Acting"],
+    "interests": ["Funny Skits", "Movies"],
+    "bio": "Comedic actress who turned into a meme for her quirky roles and punchlines.",
+    "contact": { "socials": {} },
+    "status": "Active",
+    "languages": ["Filipino"]
+  },
+  {
+    "name": "Boy Tapang",
+    "image": "./assets/images/boy-tapang.jpg",
+    "location": "Philippines",
+    "age": 32,
+    "gender": "Male",
+    "job_title": "Content Creator",
+    "company": "YouTube",
+    "skills": ["Survival", "Outdoors"],
+    "interests": ["Wilderness", "Adventure"],
+    "bio": "Vlogger known for extreme stunts and raw lifestyle, often meme’d for his toughness.",
+    "contact": {
+      "socials": { "youtube": "youtube.com/boytapang" }
+    },
+    "status": "Active",
+    "languages": ["Filipino"]
+  },
+  {
+    "name": "Richard Gomez",
+    "image": "./assets/images/richard-gomez.jpg",
+    "location": "Philippines",
+    "age": 59,
+    "gender": "Male",
+    "job_title": "4th District Representative",
+    "company": "4th District of Leyte",
+    "skills": ["Political Maneuvering", "Public Speaking"],
+    "interests": ["Public Service", "Community Development"],
+    "bio": "Actor-turned-politician known for his charismatic presence and viral moments in Congress.",
+    "contact": {
+      "socials": { "youtube": "youtube.com/richardgomez" }
+    },
+    "status": "Active",
+    "languages": ["Filipino"]
+  }
+]
